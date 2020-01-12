@@ -7,7 +7,9 @@ app.use(bodyParser.json());
 // Objeto Usuario agregar campos
 let usuario = {
     nombre:'',
-    apellido: ''
+    apellido: '',
+    direccion:'',
+    telefono:'',
 };
 
 // Response
@@ -35,7 +37,7 @@ app.route('/usuario')
             codigo: 200,
             mensaje: ''
         };
-        if(usuario.nombre === '' || usuario.apellido === '') {
+        if(usuario.nombre === '' || usuario.apellido === ''|| usuario.direccion === '' || usuario.direccion === '') {
             respuesta = {
                 error: true,
                 codigo: 501,

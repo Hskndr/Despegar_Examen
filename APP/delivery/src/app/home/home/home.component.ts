@@ -21,7 +21,8 @@ export class HomeComponent implements OnInit {
   }
 
   getDeliveries(): void {
-    this.deliveries = this.deliService.getDeliveries();
+     this.deliService.getDeliveries()
+       .subscribe(deliveries => this.deliveries = deliveries);
   }
   onSelect(delivery: Delivery): void{
     this.selectDelivery = delivery;
