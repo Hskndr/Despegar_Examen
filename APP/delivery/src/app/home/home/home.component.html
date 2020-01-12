@@ -1,0 +1,24 @@
+<div class="border">
+  <p>home works!</p>
+  <p>Filtros</p>
+  <h2>Deliveries</h2>
+
+  <div class="wraper" *ngFor="let delivery of deliveries">
+    <div class="row">
+      <div class="col">
+        <div class="card" style="width: 18rem; height: 14rem">
+          <div class="card-body">
+            <h5 class="card-title">{{delivery.company}}</h5>
+            <span class="card-text">{{delivery.description}}</span>
+            <a href="#" class="btn btn-secondary">Realizar Pedido</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+</div>
+
