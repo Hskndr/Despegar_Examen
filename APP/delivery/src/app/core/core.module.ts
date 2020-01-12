@@ -6,6 +6,8 @@ import { MainComponent } from './shell/main/main.component';
 import { FooterComponent } from './shell/footer/footer.component';
 import {RouterModule} from "@angular/router";
 import { NotFoundComponent } from './not-found/not-found.component';
+import {MatToolbarModule} from "@angular/material/toolbar";
+import {MatCardModule} from "@angular/material/card";
 
 
 
@@ -13,7 +15,9 @@ import { NotFoundComponent } from './not-found/not-found.component';
   declarations: [ShellComponent, HeaderComponent, MainComponent, FooterComponent, NotFoundComponent],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    MatToolbarModule,
+    MatCardModule
   ],
   exports: [
     ShellComponent

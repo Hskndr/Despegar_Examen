@@ -1,3 +1,7 @@
 .selectedDelivery {
   color: red;
 }
+
+mat-grid-tile {
+  background: lightblue;
+}
