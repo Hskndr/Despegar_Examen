@@ -4,11 +4,11 @@ import {Delivery} from "../../Class/deliveries";
 import {DeliveriesServService} from "../services/deliveries-serv.service";
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-delivery',
+  templateUrl: './delivery.component.html',
+  styleUrls: ['./delivery.component.css']
 })
-export class HomeComponent implements OnInit {
+export class DeliveryComponent implements OnInit {
   deliveries: Delivery[];
 
    selectDelivery: Delivery;

@@ -1,152 +1,159 @@
 const express = require("express");
 const bodyParser = require('body-parser');
 const app = express();
+
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // Objeto Usuario agregar campos
-let usuario = {
-    nombre:'',
-    apellido: '',
-    direccion:'',
-    telefono:'',
+let user = {
+    name:'',
+    lastName: '',
+    address:'',
+    phone:'',
 };
 
 // Response
-let respuesta = {
+let response = {
     error: false,
-    codigo: 200,
-    mensaje: ''
+    code: 200,
+    message: ''
 };
 
-//Root home
+//Root delivery
 app.get('/', function(req, res) {
-    respuesta = {
+    response = {
         error: true,
-        codigo: 200,
-        mensaje: 'Punto de inicio'
+        code: 200,
+        message: 'Start'
     };
-    res.send(respuesta);
+    res.send(response);
 });
-app.route('/usuario')
+app.route('/user')
 
     //GET
     .get(function (req, res) {
-        respuesta = {
+        response = {
             error: false,
-            codigo: 200,
-            mensaje: ''
+            code: 200,
+            message: ''
         };
-        if(usuario.nombre === '' || usuario.apellido === ''|| usuario.direccion === '' || usuario.direccion === '') {
-            respuesta = {
+        if(user.name === '' || user.lastName === ''|| user.address === '' || user.phone === '') {
+            response = {
                 error: true,
-                codigo: 501,
-                mensaje: 'El usuario no ha sido creado'
+                code: 404,//501,
+                message: 'User has not been created'
             };
         } else {
-            respuesta = {
+            response = {
                 error: false,
-                codigo: 200,
-                mensaje: 'respuesta del usuario',
-                respuesta: usuario
+                code: 200,
+                message: 'User response',
+                response: user
             };
         }
-        res.send(respuesta);
+        res.send(response);
     })
 
     //POST
     .post(function (req, res) {
-        if(!req.body.nombre || !req.body.apellido) {
-            respuesta = {
+        if(!req.body.name || !req.body.lastName || !req.body.address || !req.body.phone) {
+            response = {
                 error: true,
-                codigo: 502,
-                mensaje: 'El campo nombre y apellido son requeridos'
+                code: 502,
+                message: 'All fields are required'
             };
         } else {
-            if(usuario.nombre !== '' || usuario.apellido !== '') {
-                respuesta = {
+            if(user.name === '' || user.lastName === ''|| user.address === '' || user.phone === '') {
+                response = {
                     error: true,
-                    codigo: 503,
-                    mensaje: 'El usuario ya fue creado previamente'
+                    code: 503,
+                    message: 'User exists'
                 };
             } else {
-                usuario = {
-                    nombre: req.body.nombre,
-                    apellido: req.body.apellido
+                user = {
+                    name: req.body.name,
+                    lastName: req.body.lastName,
+                    address: req.body.address,
+                    phone: req.body.phone
                 };
-                respuesta = {
+                response = {
                     error: false,
-                    codigo: 200,
-                    mensaje: 'Usuario creado',
-                    respuesta: usuario
+                    code: 200,
+                    message: 'user has been created',
+                    response: user
                 };
             }
         }
 
-        res.send(respuesta);
+        res.send(response);
     })
 
     //PUT
     .put(function (req, res) {
-        if(!req.body.nombre || !req.body.apellido) {
-            respuesta = {
+        if(!req.body.name || !req.body.lastName || !req.body.address || !req.body.phone) {
+            response = {
                 error: true,
-                codigo: 502,
-                mensaje: 'El campo nombre y apellido son requeridos'
+                code: 502,
+                message: 'All fields are required'
             };
         } else {
-            if(usuario.nombre === '' || usuario.apellido === '') {
-                respuesta = {
+            if(user.name === '' || user.lastName === ''|| user.address === '' || user.phone === '') {
+                response = {
                     error: true,
-                    codigo: 501,
-                    mensaje: 'El usuario no ha sido creado'
+                    code: 501,
+                    message: 'User has not been created'
                 };
             } else {
-                usuario = {
-                    nombre: req.body.nombre,
-                    apellido: req.body.apellido
+                user = {
+                    name: req.body.name,
+                    lastName: req.body.lastName,
+                    address: req.body.address,
+                    phone: req.body.phone
                 };
-                respuesta = {
+                response = {
                     error: false,
-                    codigo: 200,
-                    mensaje: 'Usuario actualizado',
-                    respuesta: usuario
+                    code: 200,
+                    message: 'user updated',
+                    response: user
                 };
             }
         }
 
-        res.send(respuesta);
+        res.send(response);
     })
 
     //DELETE
     .delete(function (req, res) {
-        if(usuario.nombre === '' || usuario.apellido === '') {
-            respuesta = {
+        if(user.name === '' || user.lastName === ''|| user.address === '' || user.phone === '') {
+            response = {
                 error: true,
-                codigo: 501,
-                mensaje: 'El usuario no ha sido creado'
+                code: 501,
+                message: 'user has not been created'
             };
         } else {
-            respuesta = {
+            response = {
                 error: false,
-                codigo: 200,
-                mensaje: 'Usuario eliminado'
+                code: 200,
+                message: 'user delete'
             };
-            usuario = {
-                nombre: '',
-                apellido: ''
+            user = {
+                name: '',
+                lastName: '',
+                address: '',
+                phone: ''
             };
         }
-        res.send(respuesta);
+        res.send(response);
     });
 app.use(function(req, res, next) {
-    respuesta = {
+    response = {
         error: true,
-        codigo: 404,
-        mensaje: 'URL no encontrada'
+        code: 404,
+        message: 'URL not found'
     };
-    res.status(404).send(respuesta);
+    res.status(404).send(response);
 });
 app.listen(3000, () => {
-    console.log("El servidor está inicializado en el puerto 3000");
+    console.log("server start on port 3000");
 });

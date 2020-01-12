@@ -5,8 +5,16 @@ import {NotFoundComponent} from "./core/not-found/not-found.component";
 
 const routes: Routes = [
   {
+    path: 'user',
+    loadChildren: () => import('./user/user.module').then(m => m.UserModule)
+  },
+  {
+    path: 'order',
+    loadChildren: () => import('./order/order.module').then(m => m.OrderModule)
+  },
+  {
     path: '',
-    loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
+    loadChildren: () => import('./delivery/delivery.module').then(m => m.DeliveryModule)
   },
   {
     path: 'not-found',
