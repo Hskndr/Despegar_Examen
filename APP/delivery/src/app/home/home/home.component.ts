@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {DELIVERIES} from "../../Mock/mock-deliveries";
+import {Delivery} from "../../Class/deliveries";
+import {DeliveriesServService} from "../services/deliveries-serv.service";
 
 @Component({
   selector: 'app-home',
@@ -7,10 +9,22 @@ import {DELIVERIES} from "../../Mock/mock-deliveries";
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  deliveries = DELIVERIES;
-  constructor() { }
+  deliveries: Delivery[];
+
+   selectDelivery: Delivery;
+  constructor(
+    private deliService: DeliveriesServService
+  ) { }
 
   ngOnInit() {
+    this.getDeliveries()
+  }
+
+  getDeliveries(): void {
+    this.deliveries = this.deliService.getDeliveries();
+  }
+  onSelect(delivery: Delivery): void{
+    this.selectDelivery = delivery;
   }
 
 }
