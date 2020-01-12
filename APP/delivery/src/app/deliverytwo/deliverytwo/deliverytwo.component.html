@@ -1,0 +1,29 @@
+<mat-card> Filtros
+</mat-card>
+<mat-card>
+  <h2>Deliveries</h2>
+  <ul>
+
+    <li *ngFor="let delivery of deliveries"
+        [class.selectedDelivery]="delivery === selectDelivery"
+        (click)="onSelect(delivery)">
+      <mat-card>
+        {{delivery.company}}
+        {{delivery.description}}
+        <a>Realizar Pedido</a>
+      </mat-card>
+    </li>
+
+  </ul>
+
+  <div *ngIf="selectDelivery">
+    <h2>{{selectDelivery.company}} Menu</h2>
+    <div>
+      <label>Delivery:
+        <input [(ngModel)]="selectDelivery.company" placeholder="company">
+      </label>
+    </div>
+
+  </div>
+
+</mat-card>

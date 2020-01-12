@@ -1,0 +1,26 @@
+.selectedDelivery {
+  color: red;
+}
+
+mat-grid-tile {
+  background: lightblue;
+}
+
+mat-card-header{
+  background-color: blue;
+  color: white;
+}
+
+.deliHome{
+
+
+
+}
+
+ul{
+  display: flex;
+}
+li{
+  list-style: none;
+  margin: 1rem;
+}

@@ -14,7 +14,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    loadChildren: () => import('./delivery/delivery.module').then(m => m.DeliveryModule)
+    loadChildren: () => import('./deliverytwo/deliverytwo.module').then(m => m.DeliverytwoModule)
   },
   {
     path: 'not-found',

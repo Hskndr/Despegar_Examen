@@ -13,7 +13,6 @@ import {FormsModule} from "@angular/forms";
     CommonModule,
     DeliveryRoutingModule,
     FormsModule,
-
   ]
 })
 export class DeliveryModule {
