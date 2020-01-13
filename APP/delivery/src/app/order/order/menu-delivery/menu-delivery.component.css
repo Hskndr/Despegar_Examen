@@ -1,2 +1,9 @@
+.left{
+  width: 30%!important;
+  border: 1px solid red!important;
+}
 
-
+.right{
+  width: 70%!important;
+  border: 1px solid blue!important;
+}

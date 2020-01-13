@@ -9,6 +9,8 @@ import {OrderDeliveryComponent} from './order/order-delivery/order-delivery.comp
 import {FormsModule} from "@angular/forms";
 import {MatGridListModule} from "@angular/material/grid-list";
 import {MatTreeModule} from "@angular/material/tree";
+import {MatButtonToggleModule} from "@angular/material/button-toggle";
+import {MatTableModule} from "@angular/material/table";
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import {MatTreeModule} from "@angular/material/tree";
     MatCardModule,
     FormsModule,
     MatGridListModule,
-    MatTreeModule
+    MatTreeModule,
+    MatButtonToggleModule,
+    MatTableModule
 
   ]
 })
