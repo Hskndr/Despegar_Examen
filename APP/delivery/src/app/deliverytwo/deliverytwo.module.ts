@@ -6,10 +6,11 @@ import { DeliverytwoComponent } from './deliverytwo/deliverytwo.component';
 import {FormsModule} from "@angular/forms";
 import {MatCardModule} from "@angular/material/card";
 import {MatGridListModule} from "@angular/material/grid-list";
+import { FilterComponent } from './deliverytwo/filter/filter.component';
 
 
 @NgModule({
-  declarations: [DeliverytwoComponent],
+  declarations: [DeliverytwoComponent, FilterComponent],
   imports: [
     CommonModule,
     DeliverytwoRoutingModule,

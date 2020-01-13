@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require('body-parser');
 const app = express();
+const port = 3000;
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -154,6 +155,6 @@ app.use(function(req, res, next) {
     };
     res.status(404).send(response);
 });
-app.listen(3000, () => {
-    console.log("server start on port 3000");
+app.listen(port, () => {
+    console.log('server start on port '+port);
 });

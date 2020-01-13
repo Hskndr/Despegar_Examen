@@ -1,4 +1,5 @@
-<mat-card> Filtros
+<mat-card>
+  <app-filter></app-filter>
 </mat-card>
 <mat-card>
   <h2>Deliveries</h2>
@@ -7,10 +8,17 @@
     <li *ngFor="let delivery of deliveries"
         [class.selectedDelivery]="delivery === selectDelivery"
         (click)="onSelect(delivery)">
-      <mat-card>
-        {{delivery.company}}
-        {{delivery.description}}
-        <a>Realizar Pedido</a>
+      <mat-card class="delivery-card">
+        <mat-card-title>
+          {{delivery.company}}
+        </mat-card-title>
+        <mat-card-content>
+          {{delivery.description}}
+        </mat-card-content>
+        <mat-card-actions>
+          <a>Realizar Pedido</a>
+        </mat-card-actions>
+
       </mat-card>
     </li>
 

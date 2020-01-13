@@ -17,7 +17,7 @@ import {MatCardModule} from "@angular/material/card";
     CommonModule,
     RouterModule,
     MatToolbarModule,
-    MatCardModule
+    MatCardModule,
   ],
   exports: [
     ShellComponent

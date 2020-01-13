@@ -1,28 +1,16 @@
-var express = require('express')
-var http = require('http')
-var app = express()
+const express = require('express');
+const app = express();
+const bodyParser = require('body-parser');
 
-// Array Usuarios(Deliveries)
-var users = ['oscar', 'juan', 'marcos']
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
 
 //ROUTING
-    //GET
-app.get('/users', (req, res) => {
-    res.send(users)
-})
+app.use('/users',require('./users/users.controller'));
 
 
-    //POST
-app.post('/users', (req, res) => {
-    users.push('User ' + users.length)
-    res.send("New user add")
-})
-
-// Ruta raiz
-app.get('/', (req, res) => {
-    res.status(200).send("Welcome to API REST")
-})
-
-http.createServer(app).listen(8001, () => {
-    console.log('Server started at http://localhost:8001');
+//START SERVER
+const port = 8001;
+const server = app.listen(port, function () {
+    console.log('Server started at port'+port);
 });

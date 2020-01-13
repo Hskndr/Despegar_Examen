@@ -3,12 +3,27 @@
         "id": "1",
         "company": "Bar BQ",
         "description": "Comida Americana, Comida Internacional, Parrilla, Ensaladas",
-        "categoria": {
-            "categoria-a": "pizza",
-            "categoria-b": "sandwich",
-            "categoria-c": "pastas",
-            "categoria-c": "bebidas",
-        }
+        "category": [
+            {
+                "categoryName": "Comida Americana",
+                "dishes": [
+                    {
+                        "dishName": "Comida Amer 1",
+                        "dishDescription": "Descripción Comida Americana 1",
+                        "dishPrice": 20,
+                    },
+                    {
+                        "dishName": "Comida Amer 2",
+                        "dishDescription": "Descripción Comida Americana 2",
+                        "dishPrice": 25,
+                    }
+                ]
+            },
+            {"name category": "Comida Internacional"},
+            {"name category": "Parrilla"},
+            {"name category": "Ensalada"},
+        ]
+
     },
 
     {

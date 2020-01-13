@@ -1,5 +1,5 @@
 .selectedDelivery {
-  color: red;
+  color: red!important;
 }
 
 mat-grid-tile {
@@ -10,17 +10,22 @@ mat-card-header{
   background-color: blue;
   color: white;
 }
-
-.deliHome{
-
-
-
+mat-card-actions{
+  margin-top: auto;
+  bottom: 0;
+}
+.delivery-card{
+  height: 8rem;
+  width: 12rem;
+  margin: 0.2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 ul{
   display: flex;
+  flex-wrap: wrap;
 }
 li{
   list-style: none;
-  margin: 1rem;
 }
