@@ -1,1 +1,22 @@
 <p>menu-delivery works!</p>
+<h3>Menu</h3>
+<div class="container border">
+  <div class="row">
+    <div class="col border"> <ul>
+      <li *ngFor="let menu of menues"
+          [class.selectMenu]="menu === selectMenu" (click)="onSelect(menu)">
+        <span>{{menu.categoryName}}</span>
+      </li>
+    </ul>
+
+      <div *ngIf="selectMenu">
+        <h2>{{selectMenu.categoryName}}</h2>
+        <div>
+          <label>Menu:
+            <input [(ngModel)]="selectMenu.categoryName" placeholder="company">
+          </label>
+        </div>
+      </div></div>
+    <div class="col border"> comidas platos</div>
+  </div>
+</div>

@@ -15,8 +15,8 @@ mat-card-actions{
   bottom: 0;
 }
 .delivery-card{
-  height: 8rem;
-  width: 12rem;
+  height: 12rem;
+  width: 18rem;
   margin: 0.2rem;
   display: flex;
   flex-direction: column;
