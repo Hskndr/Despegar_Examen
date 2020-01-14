@@ -9,7 +9,7 @@ import {DeliverytwoServService} from "../services/deliverytwo-serv.service";
   styleUrls: ['./deliverytwo.component.css']
 })
 export class DeliverytwoComponent implements OnInit {
-  deliveries: Delivery[];
+  deliveries: Delivery[] = [];
 
   selectDelivery: Delivery;
   constructor(
@@ -17,12 +17,20 @@ export class DeliverytwoComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.getDeliveries()
+    this.deliService.getDeliveries().subscribe(
+      (data) => {
+        this.deliveries = data['results'];
+      },
+      (error) => {
+        console.error(error);
+      }
+    )
+   /* this.getDeliveries()*/
   }
-  getDeliveries(): void {
+ /* getDeliveries(): void {
     this.deliService.getDeliveries()
       .subscribe(deliveries => this.deliveries = deliveries);
-  }
+  }*/
   onSelect(delivery: Delivery): void{
     this.selectDelivery = delivery;
   }

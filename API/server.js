@@ -1,16 +1,26 @@
-const express = require('express');
-const app = express();
-const bodyParser = require('body-parser');
 
-app.use(bodyParser.urlencoded({extended: false}));
+var express = require('express'),
+    app = express(),
+    port = process.env.PORT || 3000,
+    bodyParser = require('body-parser');
+
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-//ROUTING
-app.use('/users',require('./users/users.controller'));
+//GET
+//EXAMPLE
+var tweetRequestRoutes = require('./routes/tweetRequestRoutes');
+tweetRequestRoutes(app);
+
+//DELIVERIES
+var deliveriesRoutes = require ('./routes/deliveriesRoutes');
+deliveriesRoutes(app);
+
+//POST
+var postedTweetRoutes = require('./routes/postedTweetRoutes');
+postedTweetRoutes(app);
 
 
-//START SERVER
-const port = 8001;
-const server = app.listen(port, function () {
-    console.log('Server started at port'+port);
-});
+app.listen(port);
+
+console.log('SimpleRTAppAPI server started on: ' + port);
