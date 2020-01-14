@@ -8,6 +8,7 @@ import {MatSliderModule} from "@angular/material/slider";
 import {CoreModule} from "./core/core.module";
 import {MatCardModule} from "@angular/material/card";
 import {HttpClientModule} from "@angular/common/http";
+import {DeliverytwoServService} from "./deliverytwo/services/deliverytwo-serv.service";
 
 
 @NgModule({
@@ -21,12 +22,12 @@ import {HttpClientModule} from "@angular/common/http";
     BrowserAnimationsModule,
     MatSliderModule,
     MatCardModule,
-
-
     CoreModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    DeliverytwoServService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

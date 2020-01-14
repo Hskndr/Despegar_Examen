@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
-import {Observable, of} from "rxjs";
 import {Delivery} from "../../Class/deliveries";
-import {DELIVERIES} from "../../Mock/mock-deliveries";
 import {HttpClient} from "@angular/common/http";
+import {environment} from "../../../environments/environment";
 
 @Injectable({
   providedIn: 'root'
@@ -14,8 +13,8 @@ export class DeliverytwoServService {
   ) { }
 
   //API
-  getDeliveries(){
-    return this.http.get('http://localhost:3000/deliveries/1')
+  getAllDeliveries(){
+    return this.http.get<Delivery[]>(`${environment.apiUrl}/deliveries`)
   }
   //MOCK EXAMPLE
   /*getDeliveries(): Observable<Delivery[]> {

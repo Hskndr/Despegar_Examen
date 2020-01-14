@@ -3,6 +3,11 @@ exports.getDeliveries = function (req, res) {
     res.send(deliveries);
 };
 
+exports.getAllDeliveries = function (req, res) {
+    var deliveries = deliveriesS;
+    res.send(deliveries);
+};
+
 var deliveriesS = [
     {
         id: '1',

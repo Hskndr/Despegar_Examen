@@ -1,3 +1,4 @@
+/*
 import {Delivery} from '../Class/deliveries';
 
 export const DELIVERIES: Delivery[] = [
@@ -169,3 +170,4 @@ export const DELIVERIES: Delivery[] = [
     }]
   }
 ];
+*/

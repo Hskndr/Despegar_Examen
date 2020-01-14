@@ -4,9 +4,8 @@
 <mat-card>
   <h2>Deliveries</h2>
   <ul>
-
     <li *ngFor="let delivery of deliveries"
-        [class.selectedDelivery]="delivery === selectDelivery"
+        [class.selectedDelivery]="delivery === selectedDelivery"
         (click)="onSelect(delivery)">
       <mat-card class="delivery-card">
         <mat-card-title>
@@ -16,22 +15,17 @@
           {{delivery.description}}
         </mat-card-content>
         <mat-card-actions>
-          <a>Realizar Pedido</a>
+          <a routerLink="delivery/:id">Realizar Pedido</a>
         </mat-card-actions>
-
       </mat-card>
     </li>
-
   </ul>
-
-  <div *ngIf="selectDelivery">
-    <h2>{{selectDelivery.company}} Menu</h2>
-    <div>
-      <label>Delivery:
-        <input [(ngModel)]="selectDelivery.company" placeholder="company">
-      </label>
-    </div>
-
-  </div>
-
 </mat-card>
+<div *ngIf="selectedDelivery">
+  <h2>{{selectedDelivery.company}} Menu</h2>
+  <div>
+    <label>Delivery:
+      <input [(ngModel)]="selectedDelivery.company" placeholder="company">
+    </label>
+  </div>
+</div>

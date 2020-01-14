@@ -17,23 +17,24 @@ export class MenuDeliveryComponent {
   displayedColumns: string[] = ['dishName', 'price', 'buttons'];
   dataSource = DISHES;
 
-/*  menues : Menu[];
+  deliveries: any[] = [];
 
-  selectMenu: Menu;
   constructor(
     private menuService: MenuServService
   ) {
   }
+  getDeliveriesById(id){
+    this.menuService.getDeliveriesById(id)
+      .subscribe(
+        (data) => {
+          this.deliveries = data;
 
-  ngOnInit() {
-    this.getMenues()
+          //Debug
+          console.log(data);
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
   }
-
-  getMenues(): void {
-   /!* this.menuService.getMenues()
-      .subscribe(menues => this.menues = menues);*!/
-  }
-  onSelect(menu: Menu): void{
-    this.selectMenu = menu;
-  }*/
 }
