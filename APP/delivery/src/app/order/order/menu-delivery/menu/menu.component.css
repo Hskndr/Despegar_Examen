@@ -1,0 +1,5 @@
+mat-button-toggle{
+ display: flex;
+  flex-wrap: wrap;
+  width: 7rem;
+}

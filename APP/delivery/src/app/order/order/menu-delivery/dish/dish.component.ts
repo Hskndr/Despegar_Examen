@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {DISHES} from "../mock/mock-dishes";
 
 @Component({
   selector: 'app-dish',
@@ -6,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./dish.component.css']
 })
 export class DishComponent implements OnInit {
-
+  displayedColumns: string[] = ['dishName', 'price', 'buttons'];
+  dataSource = DISHES;
   constructor() { }
 
   ngOnInit() {

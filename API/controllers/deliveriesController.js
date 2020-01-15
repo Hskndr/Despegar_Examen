@@ -18,52 +18,52 @@ var deliveriesS = [
                 idMenu: 1,
                 descMenu: 'Comida Americana', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
             {
-                idMenu: 3,
+                idMenu: 2,
                 descMenu: 'Comida Internacional', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
             {
                 idMenu: 3, descMenu: 'Parrilla', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
             {
                 idMenu: 4, descMenu: 'Ensaladas', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
         ]
     },
     {
-        id: 3,
+        id: 2,
         company: 'Chimu',
         description: 'Comida Peruana, Parrilla, Ensaladas, Milanesas',
         menues: [
             {
                 idMenu: 1,
-                descMenu: 'Comida Americana', dishes: [
+                descMenu: 'Comida Peruana', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
             {
-                idMenu: 3,
-                descMenu: 'Comida Internacional', dishes: [
+                idMenu: 2,
+                descMenu: 'Parrilla', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
             {
-                idMenu: 3, descMenu: 'Parrilla', dishes: [
+                idMenu: 3, descMenu: 'Ensaladas', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
             {
-                idMenu: 4, descMenu: 'Ensaladas', dishes: [
+                idMenu: 4, descMenu: 'Milanesas', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
         ]
     },
@@ -74,25 +74,25 @@ var deliveriesS = [
         menues: [
             {
                 idMenu: 1,
-                descMenu: 'Comida Americana', dishes: [
+                descMenu: 'Comida China', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
             {
-                idMenu: 3,
-                descMenu: 'Comida Internacional', dishes: [
+                idMenu: 2,
+                descMenu: 'Ensaladas', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
             {
-                idMenu: 3, descMenu: 'Parrilla', dishes: [
+                idMenu: 3, descMenu: 'Carnes', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
             {
-                idMenu: 4, descMenu: 'Ensaladas', dishes: [
+                idMenu: 4, descMenu: 'Pastas', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
         ]
     },
@@ -103,25 +103,25 @@ var deliveriesS = [
         menues: [
             {
                 idMenu: 1,
-                descMenu: 'Comida Americana', dishes: [
+                descMenu: 'Casa de empanadas', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
             {
-                idMenu: 3,
-                descMenu: 'Comida Internacional', dishes: [
+                idMenu: 2,
+                descMenu: 'especialidades', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
             {
                 idMenu: 3, descMenu: 'Parrilla', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
             {
                 idMenu: 4, descMenu: 'Ensaladas', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
         ]
     },
@@ -134,23 +134,23 @@ var deliveriesS = [
                 idMenu: 1,
                 descMenu: 'Comida Americana', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
             {
-                idMenu: 3,
-                descMenu: 'Comida Internacional', dishes: [
+                idMenu: 2,
+                descMenu: 'Rotiseria', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
             {
-                idMenu: 3, descMenu: 'Parrilla', dishes: [
+                idMenu: 3, descMenu: 'especialidad en minutas', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
             {
-                idMenu: 4, descMenu: 'Ensaladas', dishes: [
+                idMenu: 4, descMenu: 'pizzas y pastas', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
         ]
     },
@@ -161,25 +161,25 @@ var deliveriesS = [
         menues: [
             {
                 idMenu: 1,
-                descMenu: 'Comida Americana', dishes: [
+                descMenu: 'Rotiseria', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
             {
-                idMenu: 3,
-                descMenu: 'Comida Internacional', dishes: [
+                idMenu: 2,
+                descMenu: 'especialidad en pollo a la parrilla ', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
             {
-                idMenu: 3, descMenu: 'Parrilla', dishes: [
+                idMenu: 3, descMenu: 'Minutas varias', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
             {
                 idMenu: 4, descMenu: 'Ensaladas', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
         ]
     },
@@ -190,25 +190,25 @@ var deliveriesS = [
         menues: [
             {
                 idMenu: 1,
-                descMenu: 'Comida Americana', dishes: [
+                descMenu: 'Comida Japonesa', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
             {
-                idMenu: 3,
+                idMenu: 2,
                 descMenu: 'Comida Internacional', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
             {
                 idMenu: 3, descMenu: 'Parrilla', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
             {
                 idMenu: 4, descMenu: 'Ensaladas', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
         ]
     },
@@ -221,23 +221,23 @@ var deliveriesS = [
                 idMenu: 1,
                 descMenu: 'Comida Americana', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
             {
-                idMenu: 3,
+                idMenu: 2,
                 descMenu: 'Comida Internacional', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
             {
                 idMenu: 3, descMenu: 'Parrilla', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
             {
                 idMenu: 4, descMenu: 'Ensaladas', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
         ]
     },
@@ -250,23 +250,23 @@ var deliveriesS = [
                 idMenu: 1,
                 descMenu: 'Comida Americana', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
             {
-                idMenu: 3,
+                idMenu: 2,
                 descMenu: 'Comida Internacional', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
             {
                 idMenu: 3, descMenu: 'Parrilla', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
             {
                 idMenu: 4, descMenu: 'Ensaladas', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
         ]
     },
@@ -279,23 +279,23 @@ var deliveriesS = [
                 idMenu: 1,
                 descMenu: 'Comida Americana', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
             {
-                idMenu: 3,
+                idMenu: 2,
                 descMenu: 'Comida Internacional', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
             {
                 idMenu: 3, descMenu: 'Parrilla', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
             {
                 idMenu: 4, descMenu: 'Ensaladas', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
         ]
     },
@@ -308,23 +308,23 @@ var deliveriesS = [
                 idMenu: 1,
                 descMenu: 'Comida Americana', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
             {
-                idMenu: 3,
+                idMenu: 2,
                 descMenu: 'Comida Internacional', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
             {
                 idMenu: 3, descMenu: 'Parrilla', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
             {
                 idMenu: 4, descMenu: 'Ensaladas', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
         ]
     },
@@ -337,18 +337,18 @@ var deliveriesS = [
                 idMenu: 1,
                 descMenu: 'Comida Japonesa', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
             {
-                idMenu: 3,
+                idMenu: 2,
                 descMenu: 'Bebidas Alcoholicas', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
             {
                 idMenu: 3, descMenu: 'Sushi', dishes: [
                     {idDish: 1, descripDish: 'plato 1', priceDish: 20},
-                    {idDish: 3, descripDish: 'plato 2', priceDish: 20}]
+                    {idDish: 2, descripDish: 'plato 2', priceDish: 20}]
             },
             {
                 idMenu: 4, descMenu: '', dishes: [
