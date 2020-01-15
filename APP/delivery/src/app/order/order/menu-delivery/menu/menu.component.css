@@ -1,5 +1,15 @@
-mat-button-toggle{
- display: flex;
+
+.dish {
+  max-height: 49vh;
+  overflow: auto;
+}
+
+mat-button-toggle-group {
+  width: 100%;
+}
+
+mat-button-toggle {
+  display: flex;
   flex-wrap: wrap;
-  width: 7rem;
+  width: 100%;
 }

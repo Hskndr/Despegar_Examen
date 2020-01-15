@@ -1,0 +1,8 @@
+.dish{
+  max-height: 49vh;
+  overflow: auto;
+}
+
+.mat-elevation-z8{
+  width: 100%;
+}

@@ -13,10 +13,14 @@ import {MatButtonToggleModule} from "@angular/material/button-toggle";
 import {MatTableModule} from "@angular/material/table";
 import { MenuComponent } from './order/menu-delivery/menu/menu.component';
 import { DishComponent } from './order/menu-delivery/dish/dish.component';
+import {MatButtonModule} from "@angular/material/button";
+import {MatIconModule} from "@angular/material/icon";
+import {MatInputModule} from "@angular/material/input";
+import { ButtonsComponent } from './order/buttons/buttons.component';
 
 
 @NgModule({
-  declarations: [OrderComponent, MenuDeliveryComponent, OrderDeliveryComponent, MenuComponent, DishComponent],
+  declarations: [OrderComponent, MenuDeliveryComponent, OrderDeliveryComponent, MenuComponent, DishComponent, ButtonsComponent],
   imports: [
     CommonModule,
     OrderRoutingModule,
@@ -25,8 +29,14 @@ import { DishComponent } from './order/menu-delivery/dish/dish.component';
     MatGridListModule,
     MatTreeModule,
     MatButtonToggleModule,
-    MatTableModule
-
+    MatTableModule,
+    MatButtonModule,
+    MatIconModule,
+    MatInputModule
+  ],
+  exports:[
+    OrderDeliveryComponent,
+    ButtonsComponent
   ]
 })
 export class OrderModule {

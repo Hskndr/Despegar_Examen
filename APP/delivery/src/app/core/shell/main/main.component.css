@@ -1,3 +1,4 @@
-mat-card{
-  min-height: 75vh;
+.shell{
+  height: 80vh;
+  overflow: auto;
 }

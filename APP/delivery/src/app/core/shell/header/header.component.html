@@ -1,12 +1,21 @@
 <mat-toolbar color="primary">
-  <span>Delivery Online</span>
+  <div class="container">
+    <div class="row">
+      <span class="col-2">Delivery Online</span>
+      <div class="col-3"></div>
+      <div class="col-7">
 
-  <header class="sticky">
+        <button mat-raised-button color="primary" routerLink="" class="logo"><span
+          class="icon-home">1- Elegí tu Delivery</span></button>
+        <button mat-raised-button color="primary" routerLink="order" class="logo"><span class="icon-home">2- Realiza tu Pedido</span>
+        </button>
+        <button mat-raised-button color="primary" routerLink="user" class="logo"><span class="icon-home">3- Completa tus datos</span>
+        </button>
 
-    <a mat-raised-button color="primary" routerLink="" class="logo"> <span class="icon-home">1- Elegí tu Delivery</span></a>
-    <a mat-raised-button color="primary" routerLink="order" class="logo"> <span class="icon-home">2- Realiza tu Pedido</span></a>
-    <a mat-raised-button color="primary" routerLink="user" class="logo"> <span class="icon-home">3- Completa tus datos</span></a>
-  </header>
+      </div>
+    </div>
+  </div>
+
 </mat-toolbar>
 
 

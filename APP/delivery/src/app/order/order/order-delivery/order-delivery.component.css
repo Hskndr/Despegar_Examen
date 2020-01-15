@@ -1,0 +1,21 @@
+.menu {
+  height: 49vh;
+}
+
+.dish {
+  max-height: 49vh;
+  overflow: auto !important;
+}
+
+table {
+  width: 100%;
+}
+
+.example-form {
+  min-width: 150px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 3rem;
+}

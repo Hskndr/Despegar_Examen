@@ -15,18 +15,9 @@ app.use((req, res, next) => {
 });
 
 
-//GET
-//EXAMPLE
-var tweetRequestRoutes = require('./routes/tweetRequestRoutes');
-tweetRequestRoutes(app);
-
 //DELIVERIES
 var deliveriesRoutes = require ('./routes/deliveriesRoutes');
 deliveriesRoutes(app);
-
-//POST
-var postedTweetRoutes = require('./routes/postedTweetRoutes');
-postedTweetRoutes(app);
 
 
 app.listen(port);
