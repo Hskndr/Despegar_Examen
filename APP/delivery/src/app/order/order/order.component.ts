@@ -8,7 +8,7 @@ import {DeliverytwoServService} from "../../deliverytwo/services/deliverytwo-ser
   styleUrls: ['./order.component.css']
 })
 export class OrderComponent implements OnInit {
-  delivery: any[] = [];
+  delivery: Delivery[] = [];
   constructor(
     // Service page one
     private deliService: DeliverytwoServService

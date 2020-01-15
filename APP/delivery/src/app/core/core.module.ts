@@ -8,6 +8,7 @@ import {RouterModule} from "@angular/router";
 import { NotFoundComponent } from './not-found/not-found.component';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatCardModule} from "@angular/material/card";
+import {MatButtonModule} from "@angular/material/button";
 
 
 
@@ -18,6 +19,7 @@ import {MatCardModule} from "@angular/material/card";
     RouterModule,
     MatToolbarModule,
     MatCardModule,
+    MatButtonModule
   ],
   exports: [
     ShellComponent

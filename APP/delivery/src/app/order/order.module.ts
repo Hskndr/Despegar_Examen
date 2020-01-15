@@ -11,10 +11,12 @@ import {MatGridListModule} from "@angular/material/grid-list";
 import {MatTreeModule} from "@angular/material/tree";
 import {MatButtonToggleModule} from "@angular/material/button-toggle";
 import {MatTableModule} from "@angular/material/table";
+import { MenuComponent } from './order/menu-delivery/menu/menu.component';
+import { DishComponent } from './order/menu-delivery/dish/dish.component';
 
 
 @NgModule({
-  declarations: [OrderComponent, MenuDeliveryComponent, OrderDeliveryComponent],
+  declarations: [OrderComponent, MenuDeliveryComponent, OrderDeliveryComponent, MenuComponent, DishComponent],
   imports: [
     CommonModule,
     OrderRoutingModule,
