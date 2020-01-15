@@ -15,7 +15,10 @@
           {{delivery.description}}
         </mat-card-content>
         <mat-card-actions>
-          <a routerLink="delivery/:id">Realizar Pedido</a>
+<!--
+          <button (click)="navigation('delivery/:id')" > Realizar Pedido</button>
+-->
+          <button (click)="onSelect(selectedDelivery)" > Realizar Pedido</button>
         </mat-card-actions>
       </mat-card>
     </li>

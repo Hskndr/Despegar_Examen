@@ -8,13 +8,15 @@ import {DeliverytwoServService} from "../../deliverytwo/services/deliverytwo-ser
   styleUrls: ['./order.component.css']
 })
 export class OrderComponent implements OnInit {
-
+  delivery: any[] = [];
   constructor(
-
+    // Service page one
+    private deliService: DeliverytwoServService
   ) { }
 
   ngOnInit() {
-
+    console.log(this.deliService.selectedDelivery);
+    this.delivery = this.deliService.selectedDelivery;
   }
 
 }

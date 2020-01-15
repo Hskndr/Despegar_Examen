@@ -4,7 +4,7 @@ import {FormControl} from "@angular/forms";
 import {Menu} from "../../../Class/menues";
 import {MenuServService} from "../../services/menu-serv.service";
 import {DISHES} from "./mock/mock-dishes";
-
+import {DeliverytwoServService} from "../../../deliverytwo/services/deliverytwo-serv.service";
 
 
 @Component({
@@ -12,29 +12,19 @@ import {DISHES} from "./mock/mock-dishes";
   templateUrl: './menu-delivery.component.html',
   styleUrls: ['./menu-delivery.component.css']
 })
-export class MenuDeliveryComponent {
+export class MenuDeliveryComponent implements OnInit{
 
   displayedColumns: string[] = ['dishName', 'price', 'buttons'];
   dataSource = DISHES;
 
-  deliveries: any[] = [];
+
+
 
   constructor(
-    private menuService: MenuServService
+
   ) {
   }
-  getDeliveriesById(id){
-    this.menuService.getDeliveriesById(id)
-      .subscribe(
-        (data) => {
-          this.deliveries = data;
+   ngOnInit() {
 
-          //Debug
-          console.log(data);
-        },
-        (error) => {
-          console.log(error);
-        }
-      );
-  }
+   }
 }

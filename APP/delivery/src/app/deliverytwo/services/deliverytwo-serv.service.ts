@@ -7,6 +7,8 @@ import {environment} from "../../../environments/environment";
   providedIn: 'root'
 })
 export class DeliverytwoServService {
+  //variable, to selected delivery
+  selectedDelivery;
 
   constructor(
     private http: HttpClient
@@ -16,8 +18,5 @@ export class DeliverytwoServService {
   getAllDeliveries(){
     return this.http.get<Delivery[]>(`${environment.apiUrl}/deliveries`)
   }
-  //MOCK EXAMPLE
-  /*getDeliveries(): Observable<Delivery[]> {
-    return of (DELIVERIES);
-  }*/
+
 }
